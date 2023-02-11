@@ -1,18 +1,18 @@
 # fsk-base
 An enterprise-level application framework based on spring cloud 3.0.3 and nacos is designed to simplify and standardize the structure of applications, encapsulate some own properties, and form a framework with its own characteristics.
 
-![license](https://img.shields.io/badge/license-Apache2.0-blue)
-![open issues](https://img.shields.io/badge/open%20issues-0%25-orange)
-![language](https://img.shields.io/badge/language-java-green)
-![downloads](https://img.shields.io/badge/downloads-10k/year-blueorange)
-![Author](https://img.shields.io/badge/Author-Gary-640000)
-![Company](https://img.shields.io/badge/Company-%E7%A6%8F%E5%AF%BF%E5%BA%B7-01b528)
-![codecover](https://img.shields.io/badge/codecover-0%25-c23400)
-![build](https://img.shields.io/badge/build-passing-c200b2)
-![chat](https://img.shields.io/badge/chat-on%20wx%20or%20qq-5b05cb)
-![springboot](https://img.shields.io/badge/springboot-version2.5.3-148400)
-![springcloud](https://img.shields.io/badge/springcloud-version3.0.3-148400)
-![nacos](https://img.shields.io/badge/nacos-2.0.2-008799)
+[![license](https://img.shields.io/badge/license-Apache2.0-blue?style=flat&logo=apache)](https://codecov.io/gh/apache/dubbo)
+![open issues](https://img.shields.io/badge/open%20issues-0%25-orange?style=flat&logo=apache)
+![language](https://img.shields.io/badge/language-java-green?style=flat&logo=apache)
+![downloads](https://img.shields.io/badge/downloads-10k/year-blueorange?style=flat&logo=apache)
+![Author](https://img.shields.io/badge/Author-Gary-640000?style=flat&logo=apache)
+![Company](https://img.shields.io/badge/Company-%E7%A6%8F%E5%AF%BF%E5%BA%B7-01b528?style=flat&logo=apache)
+![codecover](https://img.shields.io/badge/codecover-0%25-c23400?style=flat&logo=apache)
+![build](https://img.shields.io/badge/build-passing-c200b2?style=flat&logo=apache)
+![chat](https://img.shields.io/badge/chat-on%20wx%20or%20qq-5b05cb?style=flat&logo=apache)
+![springboot](https://img.shields.io/badge/springboot-version2.5.3-148400?style=flat&logo=apache)
+![springcloud](https://img.shields.io/badge/springcloud-version3.0.3-148400?style=flat&logo=apache)
+![nacos](https://img.shields.io/badge/nacos-2.0.2-008799?style=flat&logo=apache)
 
 # **Fsk-base基础框架使用：**
 
