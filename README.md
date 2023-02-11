@@ -1,18 +1,18 @@
 # fsk-base
 An enterprise-level application framework based on spring cloud 3.0.3 and nacos is designed to simplify and standardize the structure of applications, encapsulate some own properties, and form a framework with its own characteristics.
 
-![license](https://img.shields.io/badge/license-Apache2.0-blue?style=flat&logo=apache&color=red)
-![open issues](https://img.shields.io/badge/open%20issues-0%25-orange?style=flat&logo=apache)
-![language](https://img.shields.io/badge/language-java-green?style=flat&logo=apache)
-![downloads](https://img.shields.io/badge/downloads-10k/year-blueorange?style=flat&logo=apache)
-![Author](https://img.shields.io/badge/Author-Gary-640000?style=flat&logo=apache)
-![Company](https://img.shields.io/badge/Company-%E7%A6%8F%E5%AF%BF%E5%BA%B7-01b528?style=flat&logo=apache)
+![license](https://img.shields.io/badge/license-Apache2.0-blue?style=flat&logoColor=D22128&logo=Apache)
+![open issues](https://img.shields.io/badge/open%20issues-0%25-orange?style=flat&logo=Issuu)
+![language](https://img.shields.io/badge/language-java-green?style=flat&logo=boulanger)
+![downloads](https://img.shields.io/badge/downloads-10k/year-blueorange?style=flat&logo=Uploaded)
+![Author](https://img.shields.io/badge/Author-Gary-640000?style=flat&logo=SurveyMonkey)
+![Company](https://img.shields.io/badge/Company-%E7%A6%8F%E5%AF%BF%E5%BA%B7-01b528?style=flat&logo=Houzz)
 ![codecover](https://img.shields.io/badge/codecover-0%25-c23400?style=flat&logo=codecov)
 ![build](https://img.shields.io/badge/build-passing-c200b2?style=flat&logo=Buildkite)
 ![chat](https://img.shields.io/badge/chat-on%20wx%20or%20qq-5b05cb?style=flat&logo=tencentqq)
 ![springboot](https://img.shields.io/badge/springboot-version2.5.3-148400?style=flat&logo=springboot)
 ![springcloud](https://img.shields.io/badge/springcloud-version3.0.3-148400?style=flat&logo=spring)
-![nacos](https://img.shields.io/badge/nacos-2.0.2-008799?style=flat&logo=nacos)
+![nacos](https://img.shields.io/badge/nacos-2.0.2-008799?style=flat&logo=Alibaba.com)
 
 # **Fsk-base基础框架使用：**
 
