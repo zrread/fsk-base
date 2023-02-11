@@ -4,9 +4,9 @@
 ### **一、项目结构**
 
 
-*① 基础 jar包项目git地址：*https://git.fortunecare.com.cn/base/fsk-base-starter.git
+*① 基础 jar包项目git地址：*[https://git.fortunecare.com.cn/base/fsk-base-starter.git](https://github.com/zrread/fsk-base/edit/main/fsk-base-starter-autoconfigurer)
 
-*② 监控平台 jar包地址：*https://git.fortunecare.com.cn/base/fsk-xxl-job.git
+*② 监控平台 jar包地址：*[https://git.fortunecare.com.cn/base/fsk-xxl-job.git](https://github.com/zrread/fsk-base/edit/main/fsk-base-starter-autoconfigurer)
 
 ++***小知识***++
 
