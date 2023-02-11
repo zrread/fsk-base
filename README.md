@@ -5,14 +5,14 @@ An enterprise-level application framework based on spring cloud 3.0.3 and nacos 
 ![open issues](https://img.shields.io/badge/open%20issues-0%25-orange)
 ![language](https://img.shields.io/badge/language-java-green)
 ![downloads](https://img.shields.io/badge/downloads-10k/year-blueorange)
-![Author](https://img.shields.io/badge/Author-Gary-6e2de4)
-![Company](https://img.shields.io/badge/Company-%E7%A6%8F%E5%AF%BF%E5%BA%B7-blackgreen)
-![codecover](https://img.shields.io/badge/codecover-0%25-orange)
-![build](https://img.shields.io/badge/build-passing-success)
-![chat](https://img.shields.io/badge/chat-on%20wx%20or%20qq-d44545)
-![springboot](https://img.shields.io/badge/springboot-version2.5.3-blackgreen)
-![springcloud](https://img.shields.io/badge/springcloud-version3.0.3-blackgreen)
-![nacos](https://img.shields.io/badge/nacos-2.0.2-blue)
+![Author](https://img.shields.io/badge/Author-Gary-640000)
+![Company](https://img.shields.io/badge/Company-%E7%A6%8F%E5%AF%BF%E5%BA%B7-01b528)
+![codecover](https://img.shields.io/badge/codecover-0%25-c23400)
+![build](https://img.shields.io/badge/build-passing-c200b2)
+![chat](https://img.shields.io/badge/chat-on%20wx%20or%20qq-5b05cb)
+![springboot](https://img.shields.io/badge/springboot-version2.5.3-148400)
+![springcloud](https://img.shields.io/badge/springcloud-version3.0.3-148400)
+![nacos](https://img.shields.io/badge/nacos-2.0.2-008799)
 
 # **Fsk-base基础框架使用：**
 
