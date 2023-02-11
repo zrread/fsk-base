@@ -1,7 +1,7 @@
 # fsk-base
 An enterprise-level application framework based on spring cloud 3.0.3 and nacos is designed to simplify and standardize the structure of applications, encapsulate some own properties, and form a framework with its own characteristics.
 
-[![license](https://img.shields.io/badge/license-Apache2.0-blue?style=flat&logo=apache)](https://codecov.io/gh/apache/dubbo)
+![license](https://img.shields.io/badge/license-Apache2.0-blue?style=flat&logo=apache&color=red)
 ![open issues](https://img.shields.io/badge/open%20issues-0%25-orange?style=flat&logo=apache)
 ![language](https://img.shields.io/badge/language-java-green?style=flat&logo=apache)
 ![downloads](https://img.shields.io/badge/downloads-10k/year-blueorange?style=flat&logo=apache)
