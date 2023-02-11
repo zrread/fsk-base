@@ -3,6 +3,16 @@ An enterprise-level application framework based on spring cloud 3.0.3 and nacos 
 
 ![license](https://img.shields.io/badge/license-Apache2.0-blue)
 ![open issues](https://img.shields.io/badge/open%20issues-0%25-orange)
+![language](https://img.shields.io/badge/language-java-green)
+![downloads](https://img.shields.io/badge/downloads-10k/year-bluegreen)
+![](https://img.shields.io/badge/language-java-green)
+![](https://img.shields.io/badge/language-java-green)
+![](https://img.shields.io/badge/language-java-green)
+![](https://img.shields.io/badge/language-java-green)
+![](https://img.shields.io/badge/language-java-green)
+![](https://img.shields.io/badge/language-java-green)
+![](https://img.shields.io/badge/language-java-green)
+![](https://img.shields.io/badge/language-java-green)
 
 # **Fsk-base基础框架使用：**
 
