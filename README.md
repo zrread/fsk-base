@@ -48,7 +48,7 @@ An enterprise-level application framework based on spring cloud 3.0.3 and nacos 
 ### **二、StartUp**
 
 #### pom.xml中导入fsk-base-starter 1.0.0依赖jar包：
-```java
+```xml
 <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
@@ -67,7 +67,7 @@ An enterprise-level application framework based on spring cloud 3.0.3 and nacos 
 
 #### 在pom.xml中配置私服仓库
 
-```
+```xml
 <repositories>
     <repository>
         <id>fsk</id>
@@ -92,7 +92,7 @@ An enterprise-level application framework based on spring cloud 3.0.3 and nacos 
 4
 ###### ##### # 自定义业务参数，在nacos上配置
 
-```
+```yaml
 yourBizKey:
   bizKey:
     bizValue: 12345
@@ -100,7 +100,7 @@ yourBizKey:
 
 ##### 启动类添加FskAppStarterService注解，主方法类使用：FskApplication.run(AiServiceApplication.class,args);来启动。
 
-```
+```java
 package com.fsk;
  
 import com.fsk.framework.annotation.FskAppStarterService;
@@ -126,12 +126,7 @@ public class AiServiceApplication extends AbstractApp {  // 启动类需继承�
 
 ##### 扩展方法：提供了自定义方法（目前还未规划），通过实现方法如下：
 
-1
-2
-3
-4
-
-```
+```java
 @Override
 FskDecorateProxy decorate(FskDecorateProperties properties) {
     return properties.build();
@@ -144,7 +139,7 @@ FskDecorateProxy decorate(FskDecorateProperties properties) {
 ###### 当然，你也可以自定义埋点监控指标，示例：
 
 
-```
+```java
 @Configuration
 public class AppCommonTagMetrics {
     @Bean
@@ -171,7 +166,7 @@ public class AppCommonTagMetrics {
 ###### 编码使用方式：在executor包中新建自己的执行器类，方法标记注解@FskJobSign，默认value为job的name，扩展属性有init、destroy方法
 
 
-```
+```java
 @Component
 public class MyExecutor {
     /**
