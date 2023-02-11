@@ -32,28 +32,10 @@
 ```
 
 
-
-
 ### **二、StartUp**
 
 #### pom.xml中导入fsk-base-starter 1.0.0依赖jar包：
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-
-```
+```java
 <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
@@ -71,19 +53,6 @@
 ```
 
 #### 在pom.xml中配置私服仓库
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
 
 ```
 <repositories>
@@ -117,27 +86,6 @@ yourBizKey:
 ```
 
 ##### 启动类添加FskAppStarterService注解，主方法类使用：FskApplication.run(AiServiceApplication.class,args);来启动。
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
 
 ```
 package com.fsk;
@@ -182,14 +130,6 @@ FskDecorateProxy decorate(FskDecorateProperties properties) {
 
 ###### 当然，你也可以自定义埋点监控指标，示例：
 
-1
-2
-3
-4
-5
-6
-7
-8
 
 ```
 @Configuration
@@ -217,16 +157,6 @@ public class AppCommonTagMetrics {
 
 ###### 编码使用方式：在executor包中新建自己的执行器类，方法标记注解@FskJobSign，默认value为job的name，扩展属性有init、destroy方法
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
 
 ```
 @Component
