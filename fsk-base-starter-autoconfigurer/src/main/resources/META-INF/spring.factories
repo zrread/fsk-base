@@ -1,0 +1,15 @@
+# fsk nacos bootstrap
+org.springframework.cloud.bootstrap.BootstrapConfiguration=\
+  com.fsk.framework.pubconfig.KeysRMI
+# base boot auto configuration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.fsk.framework.autoconfigure.service.FskServiceAutoConfiguration
+#listener
+org.springframework.context.ApplicationListener=\
+  com.fsk.framework.listener.FskLogbackApplicationListener
+# custom failure analyzer
+org.springframework.boot.diagnostics.FailureAnalyzer=\
+com.fsk.framework.core.exception.bootanalyzer.FskBeanInstantiationFailureAnalyzer,\
+com.fsk.framework.core.exception.bootanalyzer.FskUnsatisfiedDependencyExceptionFailureAnalyzer
+# Customize the Environment or ApplicationContext Before It Starts.
+org.springframework.boot.env.EnvironmentPostProcessor=\com.fsk.framework.processer.FskEnvironmentPostProcessor

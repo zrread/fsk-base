@@ -1,0 +1,17 @@
+                          FSK(fortunecare.com.cn) License
+                           Version 1.11.2, December 2022
+                              https://zhaohu365.com/
+
+              TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+1.You must be able to obtain an authorization license from FSK(fortunecare.com.cn) to use the base framework, but we do
+not recommend that you use it directly for commercial purposes, otherwise FSK(fortunecare.com.cn) has the right to pursue
+your legal liability.
+2.Without authorization, no one is allowed to copy and distribute the source code of the framework at will, otherwise
+FSK (fortunecare.com.cn) will hold you legally responsible.
+3.If you must use it for commercial development, the framework is not free, and FSK (fortunecare.com.cn) has the
+final authorization.
+4."fortunecare.com.cn" is the commercial domain name of Shanghai Fushoukang Elderly Care Co., Ltd. In this framework,
+"FSK" stands for its abbreviation. The company coordinates are located on the 9th and 11th floors of No. 1388 Shuidian Road,
+Hongkou District, Shanghai.
+5.The above statement has permanent legal effect, and FSK (fortunecare.com.cn) has the final interpretation right.

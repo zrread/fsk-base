@@ -1,0 +1,150 @@
+# Copyright com.fsk
+# @version 1.0.0
+# @Time: 2022-01-01
+# @Description: The following is the basic configuration:
+
+#######################  Basic Configurations  ##########################
+# default server
+server:
+  port: ${fsk.server.port:8080}
+  servlet:
+    context-path: ${fsk.server.servlet.context-path:/api/${spring.application.name}}
+  shutdown: graceful
+
+# endpoints
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    tags:
+      application: ${spring.application.name}
+spring:
+  # nacos
+  config:
+    activate:
+      on-profile: uat
+  cloud:
+    loadbalancer:
+      enabled: true
+      cache:
+        enabled: true
+        caffeine:
+          spec: initialCapacity=500,expireAfterWrite=5s
+    nacos:
+      discovery:
+        server-addr: ${fsk.uat.nacos.server-addr}
+        namespace: ${fsk.uat.nacos.namespace}
+        username: ${fsk.uat.nacos.username:nacos}
+        password: ${fsk.uat.nacos.password:nacos}
+        enabled: ${fsk.uat.nacos.enabled:true}
+        group: DEFAULT_GROUP
+      config:
+        server-addr: ${fsk.uat.nacos.server-addr}
+        file-extension: yaml
+        namespace: ${fsk.uat.nacos.namespace}
+        group: DEFAULT_GROUP
+        username: ${fsk.uat.nacos.username:nacos}
+        password: ${fsk.uat.nacos.password:nacos}
+        enabled: true
+        max-retry: 10
+        config-retry-time: 2333
+        config-long-poll-timeout: 46000
+        enable-remote-sync-config: true
+  # servlet
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: ${multipart.max.size:100MB}
+      max-request-size: ${multipart.max.request.size:100MB}
+      location: /tmp/multipart
+  # admin
+  #  boot:
+  #    admin:
+  #      client:
+  #        url: http://localhost:9091
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    serialization:
+      write-dates-as-timestamps: false
+    time-zone: GMT+8
+
+  devtools:
+    add-properties: true
+    restart:
+      additional-paths: src/main/java
+
+  # metrics
+  metrics:
+    servo:
+      enabled: false
+#  zipkin:
+#    base-url: http://localhost:9411/
+#    sender:
+#      type: web
+#  sleuth:
+#    traceId128: true
+#    sampler:
+#      probability: 1.0
+
+# orm
+mybatis-plus:
+  configuration:
+    logImpl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    mapUnderscoreToCamelCase: true
+    default-executor-type: REUSE
+  typeAliasesPackage: com.fsk.*.dao.model
+  mapperLocations: classpath:mapper/*.xml
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+# resttemplate
+resttemplate:
+  sentinel:
+    enabled: true
+
+# feign
+feign:
+  sentinel:
+    enabled: ${fsk.feign.sentinel.enabled:true}
+  compression:
+    request:
+      min-request-size: ${fsk.feign.compression.request.min-request-size:2048}
+    response:
+      enabled: ${fsk.feign.compression.response.enabled:true}
+      useGzipDecoder: ${fsk.feign.compression.response.useGzipDecoder:true}
+  client:
+    default-config: ${fsk.feign.client.default-config:default}
+    config:
+      default:
+        connectTimeout: 6000
+        readTimeout: 6000
+        loggerLevel: basic
+        requestInterceptors:
+          - com.fsk.framework.core.interceptor.feign.FskFeignRequestInterceptor
+# pagehelper
+pagehelper:
+  helper-dialect: ${fsk.helper-dialect:mysql} #默认为mysql数据库，未来可扩展
+  reasonable: false
+  support-methods-arguments: ${fsk.pagehelper.support-methods-arguments:false} #是否自动分页
+
+# logging
+logging:
+  config: classpath:logback.xml
+
+log:
+  file:
+    location: ../logs/${spring.application.name}/server.log
+    maxFileSize: 50MB
+    maxHistory: 30
+    totalSizeCap: 500MB
+  appender:
+    STDOUT: true
+    FILE: false

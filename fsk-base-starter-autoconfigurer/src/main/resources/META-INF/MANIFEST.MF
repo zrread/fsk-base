@@ -1,0 +1,6 @@
+Manifest-Version: 1.11.2
+Implementation-Title: Fsk Framework
+Automatic-Module-Name: com.fsk.framework
+Implementation-Version: 1.11.2
+Built-By: Spring-Boot v2.5.3
+Build-Jdk-Spec: 1.8.0_121
