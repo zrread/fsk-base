@@ -10,7 +10,7 @@ An enterprise-level application framework based on spring cloud 3.0.3 and nacos 
 ![codecover](https://img.shields.io/badge/codecover-0%25-c23400?style=flat&logo=apache)
 ![build](https://img.shields.io/badge/build-passing-c200b2?style=flat&logo=apache)
 ![chat](https://img.shields.io/badge/chat-on%20wx%20or%20qq-5b05cb?style=flat&logo=spring)
-![springboot](https://img.shields.io/badge/springboot-version2.5.3-148400?style=flat&logo=spring)
+![springboot](https://img.shields.io/badge/springboot-version2.5.3-148400?style=flat&logo=springboot)
 ![springcloud](https://img.shields.io/badge/springcloud-version3.0.3-148400?style=flat&logo=spring)
 ![nacos](https://img.shields.io/badge/nacos-2.0.2-008799?style=flat&logo=nacos)
 
