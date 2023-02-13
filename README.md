@@ -14,7 +14,7 @@ An enterprise-level application framework based on spring cloud 3.0.3 and nacos 
 ![springcloud](https://img.shields.io/badge/springcloud-version3.0.3-148400?style=flat&logo=spring)
 ![nacos](https://img.shields.io/badge/nacos-2.0.2-008799?style=flat&logo=Alibaba.com)
 
-# ** Use of Fsk-base infrastructure：**
+# Use of Fsk-base infrastructure：
 
 ### **1、Program Structure**
 
