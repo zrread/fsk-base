@@ -27,19 +27,28 @@ An enterprise-level application framework based on spring cloud 3.0.3 and nacos 
 
 
 ```text
-1. Business public beans can be placed in jar packages to facilitate uniform and universal use, such as login user beans: package name com.fsk.framework.bean, which is maintained by the framework;
-2. If you want to use the beans in the container directly when necessary, you can use the FskSpringContextHolder to obtain them. Of course, we do not recommend this;
-3. The BizException class is used to throw exceptions, such as throw new BizException (String errorCode, String errorMsg) in the catch code block; The result class returned by the controller layer uses BaseApiResponse;
-4. It is recommended to add login status in the application layer: you can open the login interceptor in the com.fsk.framework.core.interceptor.login package;
-5. Mybatis-plus supports the automatic filling of necessary field information such as createDate and updateDate when inserting and updating. The processing handler is MyMetaObjectHandler in the package;
-6. If your business service logic deals with multithreaded execution tasks, you can use the asynchronous processing tools in com.fsk.framework.core.async package;
-7. Common public enumeration classes are in the com.fsk.framework.enums package, which can be updated later; The common constant class is in FskConstants; Common utils toolkits are in com.fsk.framework.extend.utils;
-8. All controllers, services, mappers, and models need to implement the corresponding top-level interface classes: FskBaseController, FskBaseService, FskBaseMapper, and FskBaseModel;
-Finally, if your personal ability is limited, and the package is unreasonable or wrong, please actively put forward corrections and learn and make progress together.
+1. Business public beans can be placed in jar packages to facilitate uniform and universal use, 
+such as login user beans: package name com.fsk.framework.bean, which is maintained by the framework;
+2. If you want to use the beans in the container directly when necessary, you can use the 
+FskSpringContextHolder to obtain them. Of course, we do not recommend this;
+3. The BizException class is used to throw exceptions, such as throw new BizException 
+(String errorCode, String errorMsg) in the catch code block; The result class returned by the controller layer uses BaseApiResponse;
+4. It is recommended to add login status in the application layer: you can open the 
+login interceptor in the com.fsk.framework.core.interceptor.login package;
+5. Mybatis-plus supports the automatic filling of necessary field information such as 
+createDate and updateDate when inserting and updating. The processing handler is MyMetaObjectHandler in the package;
+6. If your business service logic deals with multithreaded execution tasks, you can use
+the asynchronous processing tools in com.fsk.framework.core.async package;
+7. Common public enumeration classes are in the com.fsk.framework.enums package, which 
+can be updated later; The common constant class is in FskConstants; Common utils toolkits are in com.fsk.framework.extend.utils;
+8. All controllers, services, mappers, and models need to implement the corresponding 
+top-level interface classes: FskBaseController, FskBaseService, FskBaseMapper, and FskBaseModel;
+Finally, if your personal ability is limited, and the package is unreasonable or wrong, 
+please actively put forward corrections and learn and make progress together.
 ```
 
 
-### **2:StartUp**
+### **2、StartUp**
 
 #### Importing fsk-base-starter 1.0.0 from pom.xml depends on jar package：
 ```xml
@@ -76,15 +85,11 @@ Finally, if your personal ability is limited, and the package is unreasonable or
 </repositories>
 ```
 
-###### ##### #### Bootstrap.yml configures the basic information of profiles and application name, the registration center nacos information, and the database mysql and redis information. The environment configuration of dev  test  prod is still configured in the old way. The configuration information must start with fsk and be configured in the fixed format according to the following example：
+#### Bootstrap.yml configures the basic information of profiles and application name, the registration center nacos information, and the database mysql and redis information. The environment configuration of dev  test  prod is still configured in the old way. The configuration information must start with fsk and be configured in the fixed format according to the following example：
 
 
-###### It is isolated from non-business parameters. Only business logic parameters are configured on nacos：
-1
-2
-3
-4
-###### ##### # User-defined business parameters, configured on nacos
+#### It is isolated from non-business parameters. Only business logic parameters are configured on nacos：
+##### User-defined business parameters, configured on nacos
 
 ```yaml
 yourBizKey:
@@ -118,7 +123,7 @@ public class AiServiceApplication extends AbstractApp {  // The startup class ne
 }
 ```
 
-##### Extension method: provides a user-defined method (not yet planned). The implementation method is as follows:
+#### Extension method: provides a user-defined method (not yet planned). The implementation method is as follows:
 
 ```java
 @Override
